@@ -7,7 +7,7 @@ organizations to deliver applications and services at high velocity.
 > "Dev" = People and processes that **create** software  
 > "Ops" = Teams and processes that **deliver and monitor** software
 
-![AWS-Zero-to-Hero](assets/devops.png)
+<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/devops.png" alt="Banner" />
 
 *The infinity loop represents the ongoing collaboration across the software lifecycle.*
 
