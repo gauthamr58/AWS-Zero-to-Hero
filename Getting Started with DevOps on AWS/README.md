@@ -36,3 +36,5 @@ DevOps brings together formerly siloed roles (development, IT operations, qualit
 ---
 
 ## Problems with Traditional Development Practices
+
+Traditional ways of developing software have proven slow and inefficient, and fail to support teams' efforts to quickly deliver stable, high-quality applications. Challenges of **Waterfall development**, **monolithic applications**, **manual processes,** and **siloed** team structures cause bottlenecks and delays.
