@@ -38,3 +38,12 @@ DevOps brings together formerly siloed roles (development, IT operations, qualit
 ## Problems with Traditional Development Practices
 
 Traditional ways of developing software have proven slow and inefficient, and fail to support teams' efforts to quickly deliver stable, high-quality applications. Challenges of **Waterfall development**, **monolithic applications**, **manual processes,** and **siloed** team structures cause bottlenecks and delays.
+
+**Waterfall** is the traditional software development model where you complete each phase fully before moving to the next --- in a strict linear sequence:
+
+<img src= "https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/waterfall.png" alt="Banner" />
+
+* Customer sees the product only at the very end-   
+* If requirements change midway (and they always do), it's   expensive to go back-   
+* Bugs found late in testing are costly to fix-   
+* Slow --- a full cycle could take **months or years**
