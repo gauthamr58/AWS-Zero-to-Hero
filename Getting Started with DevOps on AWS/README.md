@@ -14,13 +14,9 @@ organizations to deliver applications and services at high velocity.
 ---
 
 ## The Core Problem
-Traditional approaches keep Dev and Ops siloed with conflicting priorities:
+Developers change things quickly, release often, and measure success by the rate of delivery. Operations are driven by maintaining stability of the application. Frequent releases are a cause for concern of the stability and reliability of the application on the supported platforms, especially during high network traffic. 
 
-| Dev | Ops |
-|-----|-----|
-| Change things fast | Maintain stability |
-| Release often | Avoid frequent releases |
-| Success = delivery rate | Success = reliability |
+DevOps brings together formerly siloed roles (development, IT operations, quality engineering, and security) to optimize the productivity of developers and the reliability of operations.
 
 ---
 
@@ -38,4 +34,3 @@ Traditional approaches keep Dev and Ops siloed with conflicting priorities:
 - Ability to quickly respond to business and customer needs
 
 ---
-*Source: AWS SkillBuilder — DevOps Foundations, Module 1*
