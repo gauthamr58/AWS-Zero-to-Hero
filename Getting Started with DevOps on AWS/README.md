@@ -43,7 +43,52 @@ Traditional ways of developing software have proven slow and inefficient, and fa
 
 <img src= "https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/waterfall.png" alt="Banner" />
 
-* Customer sees the product only at the very end-   
-* If requirements change midway (and they always do), it's   expensive to go back-   
-* Bugs found late in testing are costly to fix-   
-* Slow --- a full cycle could take **months or years**
+* Customer sees the product only at the very end   
+* If requirements change midway (and they always do), it's   expensive to go back   
+* Bugs found late in testing are costly to fix   
+* Slow - a full cycle could take months or years
+
+---
+
+**Monolithic application** is a software built as **one single unified unit** where all components are tightly connected and run together.
+
+
+┌─────────────────────────────┐
+
+│      MONOLITHIC APP         │
+
+│                             │
+
+│  ┌──────────────────────┐   │
+
+│  │     User Interface   │   │
+
+│  ├──────────────────────┤   │
+
+│  │    Business Logic    │   │
+
+│  ├──────────────────────┤   │
+
+│  │    Database Layer    │   │
+
+│  └──────────────────────┘   │
+
+│                             │
+
+│   All in one single unit    │
+
+└─────────────────────────────┘
+
+**Real world example:**
+
+Think of an e-commerce app --- login, product search, cart, payment, notifications --- all written as **one big application**, deployed as one package.
+
+* * * * *
+
+**The problems it creates:**
+
+-   **Scaling is wasteful** - if only payments are under heavy load, you still have to scale the entire application
+-   **One bug can crash everything** - no isolation between components
+-   **Hard to update** - changing one small feature requires redeploying the whole app
+-   **Slow development** - large codebase, teams stepping on each other
+-   **Technology locked** - entire app is tied to one language or framework
