@@ -34,3 +34,5 @@ DevOps brings together formerly siloed roles (development, IT operations, qualit
 - Ability to quickly respond to business and customer needs
 
 ---
+
+## Problems with Traditional Development Practices
