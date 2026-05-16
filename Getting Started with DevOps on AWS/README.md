@@ -53,31 +53,31 @@ Traditional ways of developing software have proven slow and inefficient, and fa
 **Monolithic application** is a software built as **one single unified unit** where all components are tightly connected and run together.
 
 
-┌─────────────────────────────┐
+        ┌─────────────────────────────┐
 
-│      MONOLITHIC APP         │
+        │      MONOLITHIC APP         │
 
-│                             │
+        │                             │
 
-│  ┌──────────────────────┐   │
+        │  ┌──────────────────────┐   │
 
-│  │     User Interface   │   │
+│       │        User Interface   │   │
 
-│  ├──────────────────────┤   │
+        │  ├──────────────────────┤   │
 
-│  │    Business Logic    │   │
+        │  │    Business Logic    │   │
 
-│  ├──────────────────────┤   │
+        │  ├──────────────────────┤   │
 
-│  │    Database Layer    │   │
+        │  │    Database Layer    │   │
 
-│  └──────────────────────┘   │
+        │  └──────────────────────┘   │
 
-│                             │
+        │                             │
 
-│   All in one single unit    │
+        │   All in one single unit    │
 
-└─────────────────────────────┘
+        └─────────────────────────────┘
 
 ---
 
