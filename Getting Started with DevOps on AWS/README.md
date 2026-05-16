@@ -90,3 +90,31 @@ Think of an e-commerce app --- login, product search, cart, payment, notificatio
 ## 🖥️⚙️ Manual Processes — The Problem
 
 Manual processes throughout the application lifecycle are slow, inconsistent, and error-prone. For example, **manually setting and configuring the infrastructure is time-consuming**. **Manually repeating this process is no guarantee that a step will not be missed**. Another example is telling the developers to **make sure their code is thoroughly tested before pushing it**. Even with the best intentions, this manual process is slow, and does not preclude someone from forgetting a test or two.
+
+---
+
+**Siloed team structure** is when different teams (Dev, Ops, QA, Security) work **separately and independently** with little to no communication between them.
+
+Each team only focuses on their own piece of work and **"throws it over the wall"** to the next team.
+
+```
+┌───────────┐     ┌───────────┐     ┌───────────┐     ┌───────────┐
+│    DEV    │ →→→ │    QA     │ →→→ │  SECURITY │ →→→ │    OPS    │
+│  (Build)  │     │  (Test)   │     │  (Check)  │     │ (Deploy)  │
+└───────────┘     └───────────┘     └───────────┘     └───────────┘
+  No idea what      No idea what      No idea what     Receives the
+  QA/Ops needs      Dev built for     was built or     final product
+                    production        tested how        cold
+```
+
+* * * * *
+
+**The real world problems it causes:**
+
+-   **Blame culture** --- when something breaks, teams point fingers at each other
+-   **Slow delivery** --- work sits in queues waiting to be handed off to the next team
+-   **No shared ownership** --- Dev says "it works on my machine", Ops says "not our problem"
+-   **Miscommunication** --- each team has different goals, tools, and priorities
+-   **Late feedback** --- bugs and issues discovered only when it reaches QA or Ops, expensive to fix by then
+
+---
