@@ -89,4 +89,4 @@ Think of an e-commerce app --- login, product search, cart, payment, notificatio
 
 ## 🖥️⚙️ Manual Processes — The Problem
 
-Manual processes throughout the application lifecycle are slow, inconsistent, and error-prone. For example, manually setting and configuring the infrastructure is time-consuming. Manually repeating this process is no guarantee that a step will not be missed. Another example is telling the developers to make sure their code is thoroughly tested before pushing it. Even with the best intentions, this manual process is slow, and does not preclude someone from forgetting a test or two.
+Manual processes throughout the application lifecycle are slow, inconsistent, and error-prone. For example, **manually setting and configuring the infrastructure is time-consuming**. **Manually repeating this process is no guarantee that a step will not be missed**. Another example is telling the developers to **make sure their code is thoroughly tested before pushing it**. Even with the best intentions, this manual process is slow, and does not preclude someone from forgetting a test or two.
