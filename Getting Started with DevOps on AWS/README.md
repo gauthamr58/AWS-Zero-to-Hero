@@ -84,3 +84,13 @@ Think of an e-commerce app --- login, product search, cart, payment, notificatio
 -   **Hard to update** - changing one small feature requires redeploying the whole app
 -   **Slow development** - large codebase, teams stepping on each other
 -   **Technology locked** - entire app is tied to one language or framework
+
+---
+
+## Manual Processes — The Problem
+
+**Infrastructure setup** — manually setting and configuring infrastructure is time-consuming
+
+**Slow** — manual setup and configuration is time-consuming
+
+ **Unreliable testing** — telling developers to manually test before pushing is slow and doesn't prevent missed tests
