@@ -79,11 +79,14 @@ Traditional ways of developing software have proven slow and inefficient, and fa
 
 └─────────────────────────────┘
 
+---
+
 **Real world example:**
 
 Think of an e-commerce app --- login, product search, cart, payment, notifications --- all written as **one big application**, deployed as one package.
 
 * * * * *
+
 
 **The problems it creates:**
 
