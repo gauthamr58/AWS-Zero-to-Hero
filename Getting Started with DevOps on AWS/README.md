@@ -54,9 +54,7 @@ Traditional ways of developing software have proven slow and inefficient, and fa
 
 
         ┌─────────────────────────────┐
-
-        │      MONOLITHIC APP         │                            │
-
+                MONOLITHIC APP                  
         │  ┌──────────────────────┐   │
 
         │  │        User Interface    │
@@ -70,9 +68,7 @@ Traditional ways of developing software have proven slow and inefficient, and fa
         │  │    Database Layer    │   │
 
         │  └──────────────────────┘   │
-
-        │   All in one single unit    │
-
+            All in one single unit    
         └─────────────────────────────┘
 
 ---
