@@ -61,7 +61,7 @@ Traditional ways of developing software have proven slow and inefficient, and fa
 
         │  ┌──────────────────────┐   │
 
-│       │        User Interface   │   │
+        │  │        User Interface    │
 
         │  ├──────────────────────┤   │
 
