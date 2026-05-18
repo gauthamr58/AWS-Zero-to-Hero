@@ -118,3 +118,5 @@ Each team only focuses on their own piece of work and **"throws it over the wall
 -   **Late feedback** --- bugs and issues discovered only when it reaches QA or Ops, expensive to fix by then
 
 ---
+
+## The benefits of DevOps
