@@ -120,3 +120,39 @@ Each team only focuses on their own piece of work and **"throws it over the wall
 ---
 
 ## The benefits of DevOps
+
+Organizations of all sizes, from small startups to big enterprises, can benefit from adopting DevOps.
+
+* **speed**- Help teams to move at a higher velocity and adapt to changing markets more effectively.
+  
+* **Rapid Delivery**-Increase the frequency and pace of releases to address bugs and add features more quickly.
+* **Realiability**- Manage the quality of application and infrastructure changes so that you can deliver at a more rapid pace while maintaining a positive experience for end users.
+* **Scale**- Use automation and consistency to help reduce risk as you scale infrastructure and development processes.
+* **Improved colloboration**-Build more effective teams under a DevOps cultural model, which emphasizes values such as ownership and accountability.
+* **Security**-Move quickly while retaining control and preserving compliance.
+
+## Devops Methodology
+
+A shift to DevOps requires creating and nurturing a DevOps culture, which is a culture of transparency, effective and seamless collaboration, and common goals.
+
+You might have the processes and tools to support DevOps but, for successful DevOps adoption, the people of the organization must have the right mindset to nurture the DevOps culture.
+
+<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/devops.png" alt="Banner" />
+
+There are seven core principles that can help you achieve a DevOps culture.
+
+**Create a highly collaborative Enivrinment**
+
+**Automate when possible**
+
+**Devolop small and release often**
+
+**Include security at every phase**
+
+**Continuously experiment and learn**
+
+**Continuously Improve**
+
+
+
+
