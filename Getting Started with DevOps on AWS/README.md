@@ -137,7 +137,7 @@ A shift to DevOps requires creating and nurturing a DevOps culture, which is a c
 
 You might have the processes and tools to support DevOps but, for successful DevOps adoption, the people of the organization must have the right mindset to nurture the DevOps culture.
 
-<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/devops.png" alt="Banner" />
+<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/people.png" alt="Banner" />
 
 There are seven core principles that can help you achieve a DevOps culture.
 
@@ -152,6 +152,24 @@ There are seven core principles that can help you achieve a DevOps culture.
 **Continuously experiment and learn**
 
 **Continuously Improve**
+
+DevOps culture leads to DevOps practices that are geared toward streamlining and improving the development lifecycle, to reliably deliver frequent updates, while maintaining stability. 
+
+**Communication and colloboration**
+
+**Monitoring and Observibility**
+
+**Continous Integration**
+
+**Continuous deployment**
+
+**Micro services architecture**
+
+**Infrastructure as a code**
+
+
+
+
 
 
 
