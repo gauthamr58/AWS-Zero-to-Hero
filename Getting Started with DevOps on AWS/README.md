@@ -41,7 +41,7 @@ Traditional ways of developing software have proven slow and inefficient, and fa
 
 **Waterfall** is the traditional software development model where you complete each phase fully before moving to the next --- in a strict linear sequence:
 
-<img src= "https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/waterfall.png" alt="Banner" />
+<img src= "https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/waterfall.png" width="400" />
 
 * Customer sees the product only at the very end   
 * If requirements change midway (and they always do), it's   expensive to go back   
