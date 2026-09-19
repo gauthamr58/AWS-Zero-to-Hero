@@ -1,1 +1,1 @@
-<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets.vpc.png" alt="Banner" />
+<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/vpc.png" alt="Banner" />
