@@ -57,3 +57,31 @@ This means:
 ⚠️ The primary CIDR block **cannot be modified** after VPC creation (only additional CIDRs can be added).
 
 ---
+
+## What is a Subnet?
+
+A **subnet** is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your VPC.
+
+---
+
+## Reserved IPs in AWS VPC
+
+AWS reserves **5 IP addresses in every subnet**, and these IPs **cannot be assigned** to resources.
+
+For a subnet CIDR block:
+
+```
+Example: 10.0.1.0/24
+```
+
+| Reserved IP  | Purpose                 |
+| ------------ | ----------------------- |
+| `10.0.1.0`   | Network address         |
+| `10.0.1.1`   | VPC router              |
+| `10.0.1.2`   | AWS DNS                 |
+| `10.0.1.3`   | Reserved for future use |
+| `10.0.1.255` | Broadcast address       |
+
+👉 Even though AWS does not use traditional broadcasting, the last IP is still reserved.
+
+---
