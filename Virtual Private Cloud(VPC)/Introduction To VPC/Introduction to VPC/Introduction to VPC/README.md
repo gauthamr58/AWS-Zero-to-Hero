@@ -85,3 +85,50 @@ Example: 10.0.1.0/24
 👉 Even though AWS does not use traditional broadcasting, the last IP is still reserved.
 
 ---
+
+## What is defaulf VPC and Its Specifications?
+
+A **Default VPC** is an automatically created VPC by AWS for every region.
+
+### Default VPC Specifications
+
+* **CIDR Block:** '172.31.0.0/16'
+* **Subnets:** one public subnet per Availability Zone
+* **Internet Gateway:** Attached by default
+* **Rouote Table:** Routes internet traffic to IGW
+* **Security Group:** Default SG allows inbound trafiic from itself
+* **NACL:** Default NACL allows all inbound and outbound traffic
+* **Public IP:** EC2 instances get public IP by default
+
+## Components automaically created when we create a VPC
+
+When you create a Virtul Private Cloud (VPC) in AWS, it doesn't just create an empty shell. To ensure the network is functional and manageable from the start, AWS automatically provisions several "default" components.
+
+## 1. Default Route Table
+
+Every VPC must have a route table to direct network traffic. Upon creation, AWS generates a **Main Route Table**.
+
+* **Purpose:** It acts as the default routing logic for any subnet you create later that isn't explicitly associated with a different route table.
+* **Initial Rule:** It comes with a single "local" route that allows communication between all resources within the VPC CIDR block.
+  
+## 2. Default Network ACL (NACL)
+
+A Network Access Contol List (NACL) is an optional layer of security for your VPC, that acts as a firewall for controlling traffic in and out of one or more subnets.
+
+* **Default Behavior:** Unlike custom NACLs which deny all trafFic by default, the **Default NACL** is configured to **allow all inbound and outbound traffic**.
+* **Scope:** It is automatically applied to any new subnet you create unless you specify otherwise.
+
+## 3. Default Security Group
+A Security group acts as a virtual firewall for your instances (at the ENI level).
+
+* **Inbound Rules:** It allows all traffic from resources that are assigned to the **same security group**.
+* **Outbound Rules:** It allows all outbound traffic to any destination.
+* **Note:** If you launch an instance and don't specify a security group, this default one is automatically       attached to it.
+
+## Main DHCP Options set
+
+To ensure your instances can communicate over the network using domain names, AWS creates and associates a DHCP (Dynamic Host Configuration Protocol) options set.
+
+* **Function:** This provides instances with configurations like domain name servers (AmazonProvideDNS), Domain names, NTP servers.
+
+---
