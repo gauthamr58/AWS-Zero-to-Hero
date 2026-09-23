@@ -125,10 +125,17 @@ A Security group acts as a virtual firewall for your instances (at the ENI level
 * **Outbound Rules:** It allows all outbound traffic to any destination.
 * **Note:** If you launch an instance and don't specify a security group, this default one is automatically       attached to it.
 
-## Main DHCP Options set
+## 4. Main DHCP Options set
 
 To ensure your instances can communicate over the network using domain names, AWS creates and associates a DHCP (Dynamic Host Configuration Protocol) options set.
 
 * **Function:** This provides instances with configurations like domain name servers (AmazonProvideDNS), Domain names, NTP servers.
 
 ---
+
+### What is NOT created automatically? 
+It is just as important to know what you have to build yourself. when you create a VPC via the API or "VPC Only" console option, the following are **missing:**
+
+* **Subnets:** You must define your own public or private subnets.
+* **Internet Gateway (IGW):** Your VPC has no internet access by default.
+* **NAT Gateways:** Required if you want private subnets to reach the internet.
