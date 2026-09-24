@@ -1,6 +1,6 @@
 
 # Bastion Hosting
-<img src"https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/bh.png" alt="Banner" />
+<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/bh.png" alt="Banner" />
 
 
 ## 1. What is a Bastion Host?
