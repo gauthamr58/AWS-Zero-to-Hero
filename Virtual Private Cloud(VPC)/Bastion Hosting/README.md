@@ -16,8 +16,11 @@ The term *bastion* comes from military usage - a fortified position designed to 
 The primary goals of using a bastion host are:
 
 ✔ **Secure Access:** Provides controlled adinistrative access (SSH/RDP) into internal systems.
+
 ✔ **Network Isolation:** Keeps direct access to private resources restricted.
+
 ✔ **Threat Surface Reduction:** Limits entry points exposed to public networks.
+
 ✔ **Audit and Accountability:** Centralizes logging of access events.
 
 Without a bastion host, administrative access might be opened directly to each host in private networks, significally incresing risk.
