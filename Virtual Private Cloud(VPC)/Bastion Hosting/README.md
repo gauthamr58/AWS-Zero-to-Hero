@@ -105,8 +105,8 @@ A bastion host must be **hardened** to resist attacks:
 
 Go to **VPC → Create VPC**
 
-* Name: 'bation-lap-vpc'
-* IPv4 CIDR: '10.0.0.0/16'
+* Name: `bation-lap-vpc`
+* IPv4 CIDR: `10.0.0.0/16`
 * Tenancy: Default
 
 ---
@@ -115,16 +115,16 @@ Go to **VPC → Create VPC**
 
 ### Public Subnet
 
-* Name: 'public-subnet'
+* Name: `public-subnet`
 * AZ: Any (e.g., ap-south-1a)
-* CIDR: '10.0.1.0/24'
+* CIDR: `10.0.1.0/24`
 * Enable: **Auto-assign Public IP**
 
 ### Private Subnet
 
-* Name: 'private-subnet'
+* Name: `private-subnet`
 * AZ: Same AZ/Different AZ
-* CIDR: '10.0.2.0/24'
+* CIDR: `10.0.2.0/24`
 
 ---
 ## Create Private & Public Routetables
@@ -136,7 +136,7 @@ Go to **VPC → Create VPC**
 
 Go to **Internet Gateway → Create**
 
-* Name: 'bastion-igw'
-* Attach to 'bastion-lab-vpc'
+* Name: `bastion-igw`
+* Attach to `bastion-lab-vpc`
 
 ---
