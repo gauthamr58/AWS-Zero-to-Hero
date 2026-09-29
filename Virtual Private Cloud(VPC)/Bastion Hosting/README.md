@@ -95,3 +95,48 @@ A bastion host must be **hardened** to resist attacks:
 * Use jump host session recording
 * Restrict session timeouts
 * Periodically rotate SSH keys
+
+
+#🧪 LAB: Checking Internet Connectivity of a Private EC2 Using Bastion Host (AWS)
+
+## 🏗️ Step 1: Create VPC Architecture
+
+### 1️⃣ Create VPC
+
+Go to **VPC → Create VPC**
+
+* Name: 'bation-lap-vpc'
+* IPv4 CIDR: '10.0.0.0/16'
+* Tenancy: Default
+
+---
+
+## 2️⃣ Create Subnets
+
+### Public Subnet
+
+* Name: 'public-subnet'
+* AZ: Any (e.g., ap-south-1a)
+* CIDR: '10.0.1.0/24'
+* Enable: **Auto-assign Public IP**
+
+### Private Subnet
+
+* Name: 'private-subnet'
+* AZ: Same AZ/Different AZ
+* CIDR: '10.0.2.0/24'
+
+---
+## Create Private & Public Routetables
+
+- Route tables - create - Private RT - Select VPC - Create - Associate the RT with appropriate subnet
+- Route tables - create - Public RT - Select VPC - Create - Associate the RT with appropriate subnet
+
+## 3️⃣ Create Internet Gateway (IGW)
+
+Go to **Internet Gateway → Create**
+
+* Name: 'bastion-igw'
+* Attach to 'bastion-lab-vpc'
+
+---
