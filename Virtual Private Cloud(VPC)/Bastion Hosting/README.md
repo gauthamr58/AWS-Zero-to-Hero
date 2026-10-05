@@ -140,3 +140,83 @@ Go to **Internet Gateway → Create**
 * Attach to `bastion-lab-vpc`
 
 ---
+
+## 5️⃣ Configure Route Tables
+
+### Public Route Table
+
+* Create: `public-rt`
+* Add route:
+
+  * Destination: `0.0.0.0/0`
+  * Target: Internet Gateway
+
+### Private Route Table
+
+* Create: `private-rt`
+*  Add route:
+
+   * Destination: ``
+   * Target: 
+
+---
+
+# 🖥️ Step 2: Launch EC2 Instances
+
+## 1️⃣ Launch Bastion Host
+
+* AMI: Amazon Linux
+* Instance Type: t3.micro (Free tier)
+* Networking - VPC - bastion-lab-vpc
+* Subnet: `public-subnet`
+* Auto-assign Public IP: Enabled
+* Key Pair: Create or use existing
+
+Name: `bastion-host`
+
+---
+
+## 2️⃣ Launch Private EC2
+
+* AMI: Amazon Linux
+* Instance Type: t3.micro
+* Networking - VPC - bastion-lab-vpc
+* Subnet: `private-subnet`
+* Auto-assign Public IP: Disabled
+* Same Key Pair
+
+Name: `private-server`
+
+---
+
+# 🔑 Step 3: Connect to Bastion Host
+
+From your local machine:
+
+```bash
+ssh -i your-key.pem ec2-user@<Bastion-Public-IP>
+```
+
+---
+
+# 🔁 Step 4: Connect to Private EC2 from Bastion
+
+Inside bastion:
+
+### Create a Private Key
+```
+nano my-key.pem
+```
+- copy paste the content of private key from your local machine, save and exit
+```
+### give execute permission to the key
+
+```bash
+chmod 700 your-key.pem
+```
+
+```bash
+ssh -i your-key.pem ec2-user@Private-EC2-Private-IP>
+```
+
+---
