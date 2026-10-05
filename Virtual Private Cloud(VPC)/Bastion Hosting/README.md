@@ -208,7 +208,7 @@ Inside bastion:
 nano my-key.pem
 ```
 - copy paste the content of private key from your local machine, save and exit
-```
+
 ### give execute permission to the key
 
 ```bash
