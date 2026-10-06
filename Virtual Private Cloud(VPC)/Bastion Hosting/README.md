@@ -281,3 +281,31 @@ If update works → NAT Gateway is functioning.
 
 ---
 
+# NAT Gateway: Zonal vs Regional
+
+A NAT gateway lets instances in a **private subnet** make outbound connections to the internet. Nothing from the internet can initiate a connection back in.
+
+## Two availability modes (since Nov 2025)
+
+| | Zonal (original) | Regional (new) |
+|---|---|---|
+| Where it lives | One **public subnet** in one AZ | Standalone **VPC-level** resource |
+| Console asks for | Subnet | VPC |
+| Public subnet needed | Yes | No |
+| High availability | One NAT gateway per AZ | Expands across AZs automatically |
+| Elastic IP | Required | Required (managed by AWS in automatic mode) |
+
+## How the private instance reaches it
+There is no direct attachment. It works through **route tables**:
+
+- Private route table: `0.0.0.0/0 → nat-xxxx`
+- Public route table (zonal mode): `0.0.0.0/0 → igw-xxxx`
+
+```
+Private EC2 → private route table → NAT gateway → Internet Gateway → Internet
+```
+
+## Notes
+- A route showing **Blackhole** means its target (the NAT gateway) is failed, deleted, or not available yet. Fix it by pointing the route at a working NAT gateway.
+- Both modes still need an Elastic IP. In automatic mode AWS manages the IPs for you
+
