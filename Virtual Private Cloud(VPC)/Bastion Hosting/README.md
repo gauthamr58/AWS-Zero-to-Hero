@@ -141,6 +141,19 @@ Go to **Internet Gateway → Create**
 
 ---
 
+## 4️⃣ Create NAT Gateway
+
+Go to **NAT Gateway → Create**
+
+* Name:`bastionnat`
+* Type: Automatic
+
+This allows private instances to access the internet.
+
+---
+
+
+
 ## 5️⃣ Configure Route Tables
 
 ### Public Route Table
@@ -156,8 +169,8 @@ Go to **Internet Gateway → Create**
 * Create: `private-rt`
 *  Add route:
 
-   * Destination: ``
-   * Target: 
+   * Destination: `0.0.0.0/0`
+   * Target: NAT Gateway
 
 ---
 
@@ -220,3 +233,51 @@ ssh -i your-key.pem ec2-user@Private-EC2-Private-IP>
 ```
 
 ---
+
+# 🌍 Step 5: Check Internet Connectivity from Private EC2
+
+Now from the **private instance**, test outbound connectivity:
+
+### Test 1: Ping Google DNS
+
+```bash
+ping 8.8.8.8
+```
+
+### Test 2: Curl Google
+
+```bash
+curl https://google.com
+```
+
+### Test 3: Install Package
+
+```bash
+sudo yum update -y
+```
+
+If update works → NAT Gateway is functioning.
+
+---
+
+# 🔍 How It Works (Conceptually)
+
+1. Private EC2 sends traffic to `0.0.0.0/0`
+2. Route table forwards to NAT Gateway
+3. NAT Gateway sends traffic to Internet Gateway
+4. Response comes back through NAT
+5. Bastion is NOT used for internet — only for SSH access
+
+---
+
+# 📌 Important Observations
+
+| Component        | Role                                     |
+| ---------------- | ---------------------------------------- |
+| Internet Gateway | Enables public subnet internet           |
+| NAT Gateway      | Enables private subnet outbound internet |
+| Bastion Host     | Secure SSH entry point                   |
+| Route Tables     | Control traffic flow                     |
+
+---
+
