@@ -11,3 +11,8 @@ It works:
 No traffic goes through the public internet. 
 
 ---
+
+# 2️⃣ Architectural Overview 
+
+<img src="https://github.com/gauthamr58/AWS-Zero-to-Hero/blob/main/assets/vpcpeering.png" alt="Banner" />
+>
