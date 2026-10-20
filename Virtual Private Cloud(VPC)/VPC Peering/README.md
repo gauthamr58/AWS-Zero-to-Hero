@@ -38,3 +38,32 @@ Example:
 
 * VPC1: 10.0.0.0/16
 * VPC2: 10.0.0.0/16 ❌ (Not allowed)
+
+### ✅ 2. Route tables must be updated manually
+
+you must explicitly update the Route Tables for both VPCs.
+
+### ✅ 3. Security groups and firewall must be updated
+
+You must update the security groups or firewall rules in both VPCs to explicitly allow inbound/outbound traffic from the peer VPC's IP range or specific application ports 
+(e.g., allowing port 443 or 5432 for database access).
+
+### ✅ 4. IAM Permissions / Administrative Access
+
+You must have the appropriate administrative permissions or Identity and Access Management (IAM) roles in both VPCs to create and modify peering connections, routing tables, and security groups.
+
+### ✅ 5. DNS Resolution Settings (Optional but Recommended)
+
+If your applications rely on private DNS hostnames to communicate across VPCs, you must enable DNS resolution (and sometimes hostname support) on the peering connection settings so that instances can resolve each other's private DNS names across the boundary
+
+Peering does NOT automatically update:
+
+* Route tables
+* Security groups
+* NACLs
+
+---
+
+
+
+
